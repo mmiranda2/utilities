@@ -15,11 +15,14 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'abacus_clean_tables=abacus.clean_tables:main',
+            'record_audio=utilities.audio:record',
         ]
     },
     install_requires=[
-        'requests'
+        'pyaudio',
+        'requests',
+        'stem',
+        'wave'
     ],
-    python_requires='~=3.7'
+    python_requires='~=3.9'
 )
